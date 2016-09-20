@@ -1,0 +1,308 @@
+/*
+font-family: 'Vollkorn', serif;
+font-family: 'Source Sans Pro', sans-serif;
+
+    GREEN   :   #6cb611
+    GREY    :   #afafaf
+    BG-Grey :   #151515
+    Borders :   #414141
+*/
+
+/*  Global Styles   */
+body {background-color: #151515;}
+h1,h2,h3,h4,h5,h6 {font-family: 'Vollkorn', serif; color: #fff}
+p{font-family: 'Source Sans Pro', sans-serif; color:#afafaf}
+button{
+    width: 120px;
+    height: 40px;
+    font-size: 14px;
+    padding:5px;
+    border-radius: 15px;
+    margin-right: 15px;
+    border: none;
+    margin-bottom: 15px;
+}
+.btn-green{background-color: #6cb611;color:#fff}
+.btn-transparent{background-color: transparent;color:#6cb611;border: 1px solid #6cb611}
+.center {text-align: center}
+section {overflow: hidden}
+/*    Header and Navbar    */
+.navbar {
+    border-radius:0;
+    min-height: 80px;
+    background-color: #000;
+    border-bottom: 1px solid #414141;
+    margin-bottom: 0;
+}
+.navbar-header button {width: 45px;margin-top:20px;}
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    line-height: 50px;
+    border-width: 5px 1px 0;
+    border-style: solid;
+    border-color: transparent;
+}
+.navbar-inverse .navbar-nav > li.active > a,
+.navbar-inverse .navbar-nav > li.active > a:hover,
+.navbar-inverse .navbar-nav > li > a:hover {
+    border-color: #6cb611 #414141;color: #6cb611;}
+.slider {padding-top: 100px;background: #000;}
+.slider img {width: 95%;}
+.slider .text {margin-top: 80px}
+.slider .text h4 {color:#6cb611}
+.slider .text button {margin-top: 10px;}
+
+/*    Services Section     */
+
+.services {background: #151515;padding-top: 80px;padding-bottom: 50px;}
+.services .text {padding-bottom: 80px;}
+.services .text p {padding-bottom: 30px;padding-top: 10px;}
+.service-box {
+    border: 1px solid #414141;
+    padding: 30px 10px;
+    height: 200px;
+    position: relative;
+}
+.service-box .bottom {
+    position: absolute;
+    bottom: -20px;
+    left: 35%;
+    margin: 0;
+    border-width: 0 10px;
+    border-style: solid;
+    border-color: #151515;
+}
+.service-box .bottom button {
+    background: #151515;
+    width: 100%;
+    margin-bottom: 0;
+}
+.service-box .top {
+    position: absolute;
+    top: -25%;
+    right: 35%;
+    background: #6cb611;
+    padding:15px;
+    border: 15px solid #151515;
+    border-radius: 50%;
+}
+/*    Latest Projects    */
+.projects .sample {float:left;margin-bottom: 30px;}
+/*    About     */
+.about {padding-top:40px;padding-bottom: 40px;}
+.about .features {width: 30%;float: left;}
+.about .features li{
+    border: 1px solid #444;
+    padding:10px 10px 10px 40px;
+    position: relative;
+}
+.about .features li::before {
+    color:#fff;
+    position: absolute;
+    left: -6%;
+    top: 25%;
+    background: #444;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 1.5rem
+}
+.about .features li.active::before , .about .features li:hover::before {background: #6cb611}
+.about .features li.active, .about .features li:hover {border-color:#6cb611}
+.about .features li:first-child::before{content: "1";}
+.about .features li:nth-child(2)::before{content: "2";}
+.about .features li:nth-child(3)::before{content: "3";}
+.about .features li:nth-child(4)::before{content: "4";}
+
+.about .details {
+    height: 364px;
+    width: 70%;
+    float: left;
+    border: 1px solid #444;
+    padding-left: 20px;
+    padding-top: 20px;
+    overflow: hidden;
+}
+.about .details .detail{
+    overflow: hidden;
+    display: none;
+}
+.about .show {display: block;}
+.about .details img {width: 30%;float: left;}
+.about .text {width: 65%;padding-left: 5%;float: left;}
+.about .text h4{margin-top: 0}
+.social-icons i{
+    float: left;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50%;
+    font-size: 12px;
+    border:1px solid #444;
+}
+.social-icons i:hover{
+    border:1px solid transparent;
+    background: #6cb611;
+    color: #fff;
+}
+/*    More Features    */
+.more-features {background:#1e1e1e;padding-top:80px;padding-bottom:80px;}
+.more-features img {float:left;width: 45%;}
+.more-features .text {float:left;width:50%;padding-left: 5%}
+.more-features .text li {float:left;width:45%;color: #fff;margin-bottom:15px;}
+.more-features .text li:before {
+    font-family: FontAwesome;
+    content: "\f04b";
+    color:#fff;
+    background: #6cb611;
+    border-radius:50%;
+    padding: 5px;
+    margin-right: 10px;
+    font-size:0.9rem;
+}
+/*    FOOTER    */
+.why, .twitter-feeds, .clients-says{width:30%;margin: 1%;float: left;}
+.choose h3 {padding-bottom:15px}
+.choose p{color:#444; font-weight: bold}
+.choose .why li {
+    border: 1px solid #444;
+    padding:5px 10px;
+    margin: 5px;
+}
+.choose .why li i {
+    margin: 5px 5px 5px 0;
+    padding: 5px;
+    color:#fff;
+    background: #6cb611;
+    border-radius:50%;
+}
+.twitter-feeds i {padding:3px;font-size: 1.6rem;}
+.choose .green {color:#6cb611}
+.clients-says .service-box {
+    margin:50px auto 20px;
+    padding: 40px 20px 20px;
+}
+
+/*    Partners    */
+.partners {background: #1f1f1f;padding-top: 50px;padding-bottom: 50px;}
+.partners .logos {padding-bottom: 20px;}
+.partners .logos > img {float:left;width:15%; margin:5px;}
+
+/*    Shortlinks    */
+.shortlinks {margin-top: 50px;margin-bottom: 30px;}
+.shortlinks > div {float:left;width: 23%;margin:1%;}
+
+.shortlinks .brief img {margin-bottom: 5px;width: 90%}
+.shortlinks .brief h4 {margin-top: 55px;}
+.shortlinks h4 {margin-bottom: 25px;margin-top: 30px;}
+.shortlinks .flicker-pics {margin:0;padding: 0;}
+.shortlinks .flicker-pics img {margin:0;padding:1px;float: left;width: 25%;}
+.latest-posts .post img {float:left; width: 25%;margin-right:5%;}
+.latest-posts .post text {float:left;width: 70%;margin: 0;padding: 0}
+.latest-posts .post .post-date {color: #e1e1e1;}
+.contact-us p{margin-bottom:20px;}
+.contact-us p:nth-of-type(n+2){margin-bottom:5px;color:#fff;font-weight: 500;}
+.contact-us p span {color:#6cb611}
+footer{padding-top:5px; padding-bottom: 5px;background: #1f1f1f }
+
+
+/*Smart phone and tablets */
+@media (max-width:767px)
+{
+    .slider {text-align: center;padding-top: 20px}
+    .slider .text {margin-top: 20px}
+    .slider .text button {margin-bottom: 50px;}
+    /*    Services Section     */
+
+    .services {background: #151515;padding-top: 40px;padding-bottom: 50px;}
+    .services .text {padding-bottom: 80px;}
+    .service-box {padding: 30px 10px;height: 170px;margin-bottom: 60px}
+    .service-box .bottom {left: 40%;}
+    .service-box .bottom button {background: #151515;width: 100%;}
+    .service-box .top {top: -25%;right: 40%;padding:15px;border-width: 10px}
+    
+    /*    Latest Projects    */
+    .projects .sample {float:left;width: 50%;margin-bottom: 15px;    }
+    /*    About     */
+    
+    .about {padding-top:40px;padding-bottom: 40px;}
+    .about .features {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 90%;
+        float:none;
+    }
+    .about .details {display: none;}
+    /*    More Features    */
+    .more-features {padding-top:30px;padding-bottom:30px;}
+    .more-features img {display: none;}
+    .more-features .text {float:none;width:90%;margin-left: 5%;margin-right: 5%}
+    /*    FOOTER    */
+   
+    .choose h3 {font-size: 2rem}
+    .choose .clients-says button {width: 40%}
+
+    /*    Partners    */
+    .partners .logos > img {width: 30%;margin:5px;}
+
+    /*    Shortlinks    */
+
+    .shortlinks .brief h4 {margin-top: 15px;}
+    .shortlinks h4 {margin-top: 20px;font-size: 1.5rem}
+    .media-object {width: 40px}
+    .why, .twitter-feeds, .clients-says{
+        width:90%;
+        margin: 5%;
+        float: none;
+        text-align: center;
+    }
+    .clients-says .service-box .top{right: 40%}
+    .clients-says .service-box {height: 190px;}
+    
+    .shortlinks {margin-top: 20px;margin-bottom: 10px;}
+    .shortlinks > div {float:none;width: 90%;margin:5%;overflow: hidden;}
+    .shortlinks, .shortlinks .social-icons  {text-align: center;}
+    .shortlinks ul.social-icons {margin-left: 25%}
+
+}
+/* Small Screens*/ 
+@media (min-width:768px) and (max-width:991px)
+{
+    
+    .slider {padding-top: 50px;}
+    .slider img{width:95%;}
+    .slider .text {margin-top: -15px}
+
+    /*    Services Section     */
+
+    .services {background: #151515;padding-top: 40px;padding-bottom: 50px;}
+    .services .text {padding-bottom: 80px;}
+    .service-box {padding: 30px 10px;height: 250px;}
+    .service-box .bottom {left: 15%;}
+    .service-box .bottom button {background: #151515;width: 100%;}
+    .service-box .top {top: -20%;right: 25%;}
+    
+      /*    About     */
+    
+    .about .details {height: 444px;}
+
+    
+    /*    More Features    */
+    .more-features {padding-top:50px;padding-bottom:50px;}
+    .more-features img {padding-top: 60px}
+    /*    FOOTER    */
+    .choose h3 {font-size: 2rem}
+    .choose .clients-says button {width: 40%}
+
+    /*    Partners    */
+    .partners .logos > img {width: 30%;margin:5px;}
+
+    /*    Shortlinks    */
+
+    .shortlinks .brief h4 {margin-top: 15px;}
+    .shortlinks h4 {margin-top: 20px;font-size: 1.5rem}
+    .media-object {width: 40px}
+     
+}
+/* Medium Screens */
+@media (min-width:992px) and (max-width:1199px){.about .details {height: 445px;}}
+/* Large Screens */
+@media (min-width:1200px){service-box .bottom {left: 30%;}}
